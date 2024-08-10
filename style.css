@@ -1,0 +1,181 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fixed {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'League Spartan', sans-serif;
+}
+
+p {
+    font-family: 'League Spartan', sans-serif;
+}
+
+#fade {
+    position: fixed;
+    background-image: linear-gradient(rgba(255, 255, 255, 0%) 30%, #2aa433 70%, #114915);
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    opacity: 90%;
+
+    transition-property: all;
+    transition-duration: 200ms;
+}
+
+#mainText {
+    position: absolute;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5); 
+    font-size: 5vw;
+    color: #f66a0f;
+    text-align: center;
+    z-index: 11;
+}
+
+img {
+    position: fixed;
+}
+
+.background {
+    height: 150%;
+    width: auto;
+    transition-property: all;
+    transition-duration: 200ms;
+}
+
+#bear {
+    width: 30%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    height: auto;
+}
+
+#monkey {
+    width: 45%;
+    margin-top: 20%;
+    margin-right: 60%;
+    height: auto;
+}
+
+#tapir {
+    width: 40%;
+    margin-top: 20%;
+    margin-left: 60%;
+    height: auto;
+}
+
+#tiger {
+    width: 35%;
+    margin-top: 20%;
+    margin-right: 50%;
+    height: auto;
+}
+
+#malayanTiger {
+    position: absolute;
+    top: 100vh;
+    height: 100vh;
+    right: 5%;
+    z-index: 11;
+
+    text-align: right;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    color: #f66a0f;
+    border: 5px solid red;
+
+    display: flex;
+    align-items: center;
+}
+
+#malayanTapir {
+    position: absolute;
+    top: 200vh;
+    height: 100vh;
+    left: 5%;
+    z-index: 11;
+    
+    text-align: left;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    color: #f66a0f;
+    border: 5px solid red;
+
+    display: flex;
+    align-items: center;
+}
+
+#proboscisMonkey {
+    position: absolute;
+    top: 300vh;
+    height: 100vh;
+    right: 5%;
+    z-index: 11;
+    
+    text-align: right;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    color: #f66a0f;
+    border: 5px solid red;
+
+    display: flex;
+    align-items: center;
+}
+
+#sunBear {
+    position: absolute;
+    top: 400vh;
+    height: 100vh;
+    left: 5%;
+    z-index: 11;
+    
+    text-align: left;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    color: #f66a0f;
+    border: 5px solid red;
+
+    display: flex;
+    align-items: center;
+}
+
+button {
+    height: 7vh;
+    width: 15vw;
+    border-radius: 100px;
+    font-family: 'League Spartan';
+    font-size: 20px;
+    background-color: #f66a0f;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    transition: background-color 100ms;
+}
+
+button:hover {
+    background-color: rgb(231, 102, 15);
+}
+
+.leadingText {
+    text-shadow: 2px;
+    font-size: 3vw;
+}
+
+.elements {
+    position: relative;
+    width: 50vw;
+}
+
+.descriptionText {
+    text-shadow: 2px;
+    font-size: 2vw;
+    line-height: normal;
+    word-wrap: break-word;
+}
