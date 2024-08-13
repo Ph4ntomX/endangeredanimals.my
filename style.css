@@ -54,32 +54,45 @@ img {
     transition-duration: 200ms;
 }
 
-#bear {
+#tree1 {
+    rotate: 0deg;
+    transform-origin: 110vh 60vw;
+}
+
+#orangutan {
     width: 30%;
     margin-bottom: 5%;
     margin-left: 25%;
     height: auto;
+
+    opacity: 0%;
 }
 
 #monkey {
     width: 45%;
-    margin-top: 20%;
-    margin-right: 60%;
+    margin-top: 35vh;
+    margin-right: 70vw;
     height: auto;
+
+    opacity: 0%;
 }
 
 #tapir {
     width: 40%;
-    margin-top: 20%;
-    margin-left: 60%;
+    margin-top: 40vh;
+    margin-left: 60vw;
     height: auto;
+
+    opacity: 0%;
 }
 
 #tiger {
     width: 35%;
-    margin-top: 20%;
-    margin-right: 50%;
+    margin-top: 40vh;
+    margin-right: 50vw;
     height: auto;
+
+    opacity: 0%;
 }
 
 #malayanTiger {
@@ -92,7 +105,6 @@ img {
     text-align: right;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
     color: #f66a0f;
-    border: 5px solid red;
 
     display: flex;
     align-items: center;
@@ -108,7 +120,6 @@ img {
     text-align: left;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
     color: #f66a0f;
-    border: 5px solid red;
 
     display: flex;
     align-items: center;
@@ -124,13 +135,12 @@ img {
     text-align: right;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
     color: #f66a0f;
-    border: 5px solid red;
 
     display: flex;
     align-items: center;
 }
 
-#sunBear {
+#borneanOrangutan {
     position: absolute;
     top: 400vh;
     height: 100vh;
@@ -140,15 +150,29 @@ img {
     text-align: left;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
     color: #f66a0f;
-    border: 5px solid red;
 
     display: flex;
     align-items: center;
 }
 
+#donation {
+    position: absolute;
+    top: 500vh;
+    height: 100vh;
+    z-index: 11;
+    
+    text-align: center;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    color: #f66a0f;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 button {
     height: 7vh;
-    width: 15vw;
+    width: 30vh;
     border-radius: 100px;
     font-family: 'League Spartan';
     font-size: 20px;
@@ -165,7 +189,7 @@ button:hover {
 
 .leadingText {
     text-shadow: 2px;
-    font-size: 3vw;
+    font-size: 9vh;
 }
 
 .elements {
@@ -175,7 +199,39 @@ button:hover {
 
 .descriptionText {
     text-shadow: 2px;
-    font-size: 2vw;
+    font-size: 5vh;
     line-height: normal;
     word-wrap: break-word;
 }
+
+#map {
+    position: relative;
+    width: 60vw;
+    height: auto;
+    margin: auto;
+}
+
+#custom {
+    position: fixed;
+    z-index: 12;
+    bottom: 2vh;
+    right: 2vw;
+
+    height: 7vh;
+    width: 20vh;
+    border-radius: 100px;
+    font-family: 'League Spartan';
+    font-size: 20px;
+    background-color: #ffffff;
+    color: #f66a0f;
+    border: 2px solid #f66a0f;
+    cursor: pointer;
+    transition: all 100ms;
+
+    opacity: 0%;
+}
+
+#custom:hover {
+    background-color: #dfdfdf;
+}
+
