@@ -119,17 +119,17 @@ console.log(params)
 
 button1.addEventListener("click", () => {
     console.log("click to " + queryParams.get("link1"))
-    window.location.href = queryParams.get("link1")
+    window.location = queryParams.get("link1")
 })
 
 button2.addEventListener("click", () => {
-    window.location.href = queryParams.get("link2")
+    window.location = queryParams.get("link2")
 })
 
 button3.addEventListener("click", () => {
-    window.location.href = queryParams.get("link3")
+    window.location = queryParams.get("link3")
 })
 
 button4.addEventListener("click", () => {
-    window.location.href = queryParams.get("link4")
+    window.location = queryParams.get("link4")
 })
