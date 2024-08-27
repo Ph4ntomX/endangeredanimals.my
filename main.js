@@ -116,15 +116,15 @@ const params = window.location.search
 const queryParams = new URLSearchParams(params)
 
 button1.addEventListener("click", () => {
-    window.open(queryParams.get("link1"), "_top")
+    window.open(queryParams.get("link1"), "_blank")
 })
 
 button2.addEventListener("click", () => {
-    window.open(queryParams.get("link2"), "_top")
+    window.open(queryParams.get("link2"), "_blank")
 })
 
 button3.addEventListener("click", () => {
-    window.open(queryParams.get("link3"), "_top")
+    window.open(queryParams.get("link3"), "_blank")
 })
 
 button4.addEventListener("click", () => {
