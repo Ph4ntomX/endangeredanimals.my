@@ -11,6 +11,11 @@ const tree1 = document.getElementById("tree1");
 const tree2 = document.getElementById("tree2");
 const tree3 = document.getElementById("tree3");
 
+const button1 = document.getElementById("firstButton")
+const button2 = document.getElementById("secondButton")
+const button3 = document.getElementById("thirdButton")
+const button4 = document.getElementById("fourthButton")
+
 const backToTop = document.getElementById("custom");
 
 console.log("Height: " + window.innerHeight);
@@ -103,7 +108,28 @@ document.addEventListener("scroll", (event) => {
     backToTop.style.opacity = opacity + "%"
 })
 
-backToTop.onclick = () => {
+backToTop.addEventListener("click", () => {
     window.scrollTo(0,0);
-}
+})
 
+const params = window.location.search
+const queryParams = new URLSearchParams(params)
+
+console.log(params)
+
+button1.addEventListener("click", () => {
+    console.log("click to " + queryParams.get("link1"))
+    window.location.href = queryParams.get("link1")
+})
+
+button2.addEventListener("click", () => {
+    window.location.href = queryParams.get("link2")
+})
+
+button3.addEventListener("click", () => {
+    window.location.href = queryParams.get("link3")
+})
+
+button4.addEventListener("click", () => {
+    window.location.href = queryParams.get("link4")
+})
