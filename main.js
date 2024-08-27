@@ -115,21 +115,18 @@ backToTop.addEventListener("click", () => {
 const params = window.location.search
 const queryParams = new URLSearchParams(params)
 
-console.log(params)
-
 button1.addEventListener("click", () => {
-    console.log("click to " + queryParams.get("link1"))
-    window.location = queryParams.get("link1")
+    window.open(queryParams.get("link1"), "_top")
 })
 
 button2.addEventListener("click", () => {
-    window.location = queryParams.get("link2")
+    window.open(queryParams.get("link2"), "_top")
 })
 
 button3.addEventListener("click", () => {
-    window.location = queryParams.get("link3")
+    window.open(queryParams.get("link3"), "_top")
 })
 
 button4.addEventListener("click", () => {
-    window.location = queryParams.get("link4")
+    window.open(queryParams.get("link4"), "_top")
 })
