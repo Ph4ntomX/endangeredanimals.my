@@ -206,8 +206,8 @@ button:hover {
 
 #map {
     position: relative;
-    width: 60vw;
-    height: auto;
+    width: auto;
+    height: 60vh;
     margin: auto;
 }
 

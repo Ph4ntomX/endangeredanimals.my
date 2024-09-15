@@ -20,6 +20,42 @@ const backToTop = document.getElementById("custom");
 
 console.log("Height: " + window.innerHeight);
 
+const translation = {
+    "Did you know? There are 306 <br> endangered species in Malaysia.": [
+        "Adakah anda tahu? Terdapat 306 <br> haiwan terancam di Malaysia.", 
+        "你可知道？马来西亚有<br>306种濒危物种。"],
+    "Learn More": [
+        "Belajar Lagi", 
+        "了解更多"],
+    "Share this website and spread the awareness!": [
+        "Kongsi laman web ini dan sebarkan kesedaran!", 
+        "Fēnxiǎng zhège wǎngzhàn bìng chuánbò yìshí!"],
+    "Malayan Tiger": [
+        "Harimau Malaya", 
+        "马来亚虎"],
+    "Malayan Tapir": [
+        "Tapir Malaya", 
+        "马来貘"],
+    "Proboscis Monkey": [
+        "Monyet Proboscis", 
+        "长鼻猴"],
+    "Orangutan": [
+        "Orangutan", 
+        "猩猩"],
+    "The Malayan tiger is a critically endangered subspecies of tiger, known for its striking orange coat with black stripes. It is native to the Malay Peninsula and is one of the smallest tiger subspecies.": [
+        "Harimau Malaya ialah subspesies harimau yang sangat terancam, terkenal dengan bulu oren yang menyerlah dengan jalur hitam. Ia berasal dari Semenanjung Tanah Melayu dan merupakan salah satu subspesies harimau terkecil.", 
+        "马来亚虎是一种极度濒危的老虎亚种，以其醒目的橙色皮毛和黑色条纹而闻名。它原产于马来半岛，是最小的老虎亚种之一。"],
+    "The Malayan tapir, also known as the Asian tapir, is the largest of the four tapir species native to the forests of Southeast Asia.": [
+        "Tapir Malaya, juga dikenali sebagai tapir Asia, adalah yang terbesar daripada empat spesies tapir yang berasal dari hutan Asia Tenggara", 
+        "马来貘，也称为亚洲貘，是原产于东南亚森林的四种貘中体型最大的。"],
+    "The proboscis monkey is an arboreal Old World monkey with an unusually large nose, a reddish-brown skin color and a long tail. It is native to the southeast Asian island of Borneo.": [
+        "Monyet proboscis ialah monyet Dunia Lama arboreal dengan hidung yang luar biasa besar, warna kulit coklat kemerahan dan ekor yang panjang. Ia berasal dari pulau Asia Tenggara Borneo.", 
+        "长鼻猴是一种树栖的旧大陆猴子，有着异常大的鼻子、红棕色的皮肤和长长的尾巴。它原产于东南亚婆罗洲岛。"],
+    "Orangutans are large, reddish-brown primates native to Borneo and Sumatra. They are highly intelligent, arboreal, and primarily solitary.": [
+        "Orangutan ialah primata besar berwarna coklat kemerahan yang berasal dari Borneo dan Sumatera. Mereka sangat pintar, arboreal, dan terutamanya bersendirian.",
+        "猩猩是大型红棕色灵长类动物，原产于婆罗洲和苏门答腊岛。它们非常聪明，喜欢树栖，并且主要是独居的。"]
+}
+
 document.addEventListener("scroll", (event) => {
     let scrollPosition = window.scrollY;
     let ratio = scrollPosition / window.innerHeight;
