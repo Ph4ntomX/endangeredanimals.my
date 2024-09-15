@@ -171,7 +171,7 @@ button3.addEventListener("click", () => {
 })
 
 button4.addEventListener("click", () => {
-    window.open(queryParams.get("link4"), "_top")
+    window.open(queryParams.get("link4"), "_blank")
 })
 
 // Translation
